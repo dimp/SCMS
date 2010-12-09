@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>dimp/SCMS @ GitHub</title>
+	
+	<style type="text/css">
+		body {
+  		margin-top: 1.0em;
+  		background-color: #def7ed;
+		  font-family: "Helvetica,Arial,FreeSans";
+  		color: #000000;
+    }
+    #container {
+      margin: 0 auto;
+      width: 700px;
+    }
+		h1 { font-size: 3.8em; color: #210812; margin-bottom: 3px; }
+		h1 .small { font-size: 0.4em; }
+		h1 a { text-decoration: none }
+		h2 { font-size: 1.5em; color: #210812; }
+    h3 { text-align: center; color: #210812; }
+    a { color: #210812; }
+    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+    .download { float: right; }
+		pre { background: #000; color: #fff; padding: 15px;}
+    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+    .footer { text-align:center; padding-top:30px; font-style: italic; }
+	</style>
+	
+</head>
+
+<body>
+  <a href="http://github.com/dimp/SCMS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+
+  <div id="container">
+
+    <div class="download">
+      <a href="http://github.com/dimp/SCMS/zipball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+      <a href="http://github.com/dimp/SCMS/tarball/master">
+        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+    </div>
+
+    <h1><a href="http://github.com/dimp/SCMS">SCMS</a>
+      <span class="small">by <a href="http://github.com/dimp">dimp</a></span></h1>
+
+    <div class="description">
+      A new and free CMS named "Simplified Content Management System" written in PHP.
+    </div>
+
+    <p>This is a free and open source project aiming for a simple, lightweight and modable CMS.</p><h2>Dependencies</h2>
+<p>Apache2, Mod_rewrite, PHP, MySQL</p>
+<h2>Install</h2>
+<p>Version 0.1-alpha1 is considered highly unstable and some very basic functions
+are still missing. You should wait until a stable version is ready for every-day
+use.
+In a few words: do not use it yet, unless you want to help!
+
+If you still insist:
+1. Open file inc/dbcon.php and edit these variables as provided by your host:
+  $host = "localhost"; // MySQL host, usually localhost
+  $dbname = "scms"; // MySQL Database name
+  $username = "root"; // MySQL username
+  $password = ""; // MySQL password
+
+2. Open admin/config.php and change $adname and $adpass to something you like
+3. Upload all files to your webhost
+4. Import db.sql to your MySQL database (most hosts offer PHPMyAdmin to do this)
+5. Visit your website.
+
+Fancy links are disabled. If you want to use them:
+1. Open PHPMyAdmin, or any other tool you use for MySQL db administration
+2. Locate scms' database and enter table settings
+3. Change id "fancylinks" value to 1
+4. Open .htaccess
+5. Change RewriteBase to state scms public folder. For example
+   if you access http://my.domain/scms to enter your scms copy
+   you must change RewriteBase to /scms/</p>
+<h2>License</h2>
+<p>SCMS is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+SCMS is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+Your copy of the GNU General Public License can be found on the file
+COPYING.  If not, see <http://www.gnu.org/licenses/gpl.txt>.
+
+The preinstalled template (substantial) is licensed under Creative Commons Attribution 3.0
+for more information see the file tpl/substantial/license.txt
+Website: http://www.freecsstemplates.org/preview/substantial/
+
+The preinstalled WYSIWYG editor is licensed under LGPL v2.1
+for more information see the file admin/tiny_mce/license.txt
+Website: http://tinymce.moxiecode.com/</p>
+<h2>Authors</h2>
+<p>DimP (dimp AT dimp DOT tk)<br/><br/>      </p>
+<h2>Contact</h2>
+<p>DimP (dimp AT dimp DOT tk)<br/>      </p>
+
+
+    <h2>Download</h2>
+    <p>
+      You can download this project in either
+      <a href="http://github.com/dimp/SCMS/zipball/master">zip</a> or
+      <a href="http://github.com/dimp/SCMS/tarball/master">tar</a> formats.
+    </p>
+    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
+      by running:
+      <pre>$ git clone git://github.com/dimp/SCMS</pre>
+    </p>
+
+    <div class="footer">
+      get the source code on GitHub : <a href="http://github.com/dimp/SCMS">dimp/SCMS</a>
+    </div>
+
+  </div>
+
+  
+</body>
+</html>
