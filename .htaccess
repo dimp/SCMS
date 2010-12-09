@@ -1,0 +1,15 @@
+Options +FollowSymlinks 
+Options -Indexes
+RewriteEngine On
+# As rewrite base you must put the folder SCMS will be accessible.
+# Slashes are required!
+# If you installed SCMS on root folder, just enter a slash
+RewriteBase /scms/folder/
+RewriteRule ^content/([^/]*)$ index.php?pid=$1 [L]
+RewriteRule ^author/([^/]*)$ index.php?aid=$1 [L]
+RewriteRule ^page/([^/]*)$ index.php?page=$1 [L]
+RewriteRule ^static/([^/]*)$ index.php?sid=$1 [L]
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.+) index.php?error [L]
